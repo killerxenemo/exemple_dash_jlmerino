@@ -12,7 +12,7 @@ from sqlalchemy import create_engine
 
 
 # Load data
-dialect='mysql+pymysql://root@localhost:3306/ree'
+dialect="mysql+pymysql://sistemesbd:bigdata2223@192.168.193.133:3306/ree"
 sqlEngine=create_engine(dialect)
 dbConnection = sqlEngine.connect()
 df= pd.read_sql('esios', dbConnection)

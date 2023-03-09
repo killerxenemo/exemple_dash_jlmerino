@@ -25,4 +25,6 @@ setuptools==53.0.0
 xlrd==2.0.1
 six==1.15.0
 Werkzeug==1.0.1
+SQLAlchemy==1.4.46
+PyMySQL==1.0.2
 gunicorn==20.0.4
