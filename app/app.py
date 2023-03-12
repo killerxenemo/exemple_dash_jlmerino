@@ -12,10 +12,10 @@ from sqlalchemy import create_engine
 
 
 # Load data
-dialect="mysql+pymysql://sistemesbd:bigdata2223@192.168.193.133:3306/ree"
+dialect="mysql+pymysql://sistemesbd:bigdata2223@192.168.193.133:3306/ree" #Aquest es el servido de clase i la BD
 sqlEngine=create_engine(dialect)
 dbConnection = sqlEngine.connect()
-df= pd.read_sql('esios', dbConnection)
+df= pd.read_sql('esios', dbConnection) #Aqui va la vostra taula
 
 df['fecha']=pd.to_datetime(df['fecha'])
 df.sort_values(by='fecha',inplace=True)
